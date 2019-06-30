@@ -1,0 +1,58 @@
+@startuml
+abstract class Contact {
+    long id
+    String firstName
+    String lastName
+    String phone
+    String email
+}
+
+class Colleague {
+    String department
+    String company
+}
+
+class Friend {
+    String personal-phone
+    String personal-email
+}
+
+Contact <|-- Colleague
+Contact <|-- Friend
+
+interface ContactsRepository
+ContactsRepository : int create(Contact conta
+ContactsRepository : Contact read(int contact
+ContactsRepository : List<Contact> readAll()
+ContactsRepository : update(Contact contact)
+ContactsRepository : delete(int contact)
+ContactsRepository : delete(Contact contact)
+
+interface ContactsController
+
+ContactsRepository <|-- InMemoryContactsRepo
+ContactsRepository <|-- SQLiteContactsRepo
+note bottom: SQLite is a possible implementation and not covered in this material
+
+
+ContactsService : int create(Contact contact)
+ContactsService : Contact read(int contactId)
+ContactsService : List<Contact> readAll()
+ContactsService : update(Contact contact)
+ContactsService : delete(int contact)
+ContactsService : delete(Contact contact)
+
+ContactsService *-- ContactsRepository
+
+ContactsController : run()
+ContactsController <|-- ConsoleController
+ContactsController <|-- WebController
+
+note bottom: Web + HTML is a possible implementation, not covered in this material
+WebController *-- HtmlView
+WebController *-- ContactsService
+
+ConsoleController *-- ConsoleView
+ConsoleController *-- ContactsService
+
+@enduml
