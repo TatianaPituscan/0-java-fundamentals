@@ -1,6 +1,6 @@
 ### Apps used to learn becoming's java curriculum
 
-[HowTo's, becoming.tech](https://www.youtube.com/playlist?list=PLPkoWZmDIKwAzpACaUFDWGqTKKXVwpVBN)
+[HowTo's, becoming.tech // YouTube](https://www.youtube.com/playlist?list=PLPkoWZmDIKwAzpACaUFDWGqTKKXVwpVBN)
 
 1. [Git](https://git-scm.com/)
 
