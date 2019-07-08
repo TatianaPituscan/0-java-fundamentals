@@ -1,5 +1,7 @@
 ### Apps used to learn becoming's java curriculum
 
+[HowTo's, becoming.tech](https://www.youtube.com/playlist?list=PLPkoWZmDIKwAzpACaUFDWGqTKKXVwpVBN)
+
 1. [Git](https://git-scm.com/)
 
 1. [Java Development Kit v8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
